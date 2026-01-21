@@ -1,0 +1,47 @@
+/* Custom Styles on top of Tailwind */
+.bento-card {
+    background-color: #18181b;
+    /* surface */
+    border: 1px solid #27272a;
+    /* border */
+    border-radius: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    position: relative;
+}
+
+.bento-card:hover {
+    border-color: #52525b;
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.grid-bg {
+    background-size: 40px 40px;
+    mask-image: linear-gradient(to bottom, transparent, 10%, black, 90%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, 10%, black, 90%, transparent);
+}
+
+.neon-text {
+    color: #ccff00;
+    text-shadow: 0 0 10px rgba(204, 255, 0, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ccff00;
+}
