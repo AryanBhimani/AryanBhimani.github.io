@@ -296,7 +296,7 @@
             <!-- 7. Socials -->
             <div
                 class="bento-card col-span-1 md:col-span-2 lg:col-span-3 lg:row-span-1 p-6 flex items-center justify-around">
-                <a href="#"
+                <a href="https://github.com/AryanBhimani/"
                     class="text-muted hover:text-white transition-colors flex flex-col items-center gap-2 group">
                     <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="currentColor"
                         viewBox="0 0 24 24">
@@ -305,7 +305,7 @@
                     </svg>
                     <span class="text-xs font-mono">GitHub</span>
                 </a>
-                <a href="#"
+                <a href="https://www.linkedin.com/in/aryanbhimani/"
                     class="text-muted hover:text-white transition-colors flex flex-col items-center gap-2 group">
                     <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="currentColor"
                         viewBox="0 0 24 24">
@@ -314,7 +314,7 @@
                     </svg>
                     <span class="text-xs font-mono">LinkedIn</span>
                 </a>
-                <a href="#"
+                <a href="https://x.com/aryan46022"
                     class="text-muted hover:text-white transition-colors flex flex-col items-center gap-2 group">
                     <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="currentColor"
                         viewBox="0 0 24 24">
@@ -336,14 +336,14 @@
                         class="text-accent neon-text">iconic</span>.</h2>
                 <p class="text-muted text-sm">Open for select collaborations in 2026.</p>
             </div>
-            <a href="mailto:aryan@mobintix.app"
+            <a href="mailto:contact@mobintix.app"
                 class="px-8 py-4 bg-white text-black font-bold rounded-lg hover:bg-accent transition-colors">
-                aryan@mobintix.app
+                contact@mobintix.app
             </a>
         </footer>
 
         <div class="text-center mt-12 mb-4 text-xs text-muted font-mono">
-            © 2026 Aryan Bhimani. Founder, Mobintix Infotech.
+            © <span id="current-year"></span> Aryan Bhimani. Founder, Mobintix Infotech.
         </div>
 
     </div>
@@ -363,6 +363,12 @@
         }
         if (menuClose) {
             menuClose.addEventListener('click', toggleMenu);
+        }
+
+        // Automatic year update
+        const currentYearSpan = document.getElementById('current-year');
+        if (currentYearSpan) {
+            currentYearSpan.textContent = new Date().getFullYear();
         }
     </script>
 </body>
