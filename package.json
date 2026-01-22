@@ -4,8 +4,8 @@
   "description": "https://aryanbhimani.me/",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify",
-    "watch": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
   },
   "keywords": [],
   "author": "",
